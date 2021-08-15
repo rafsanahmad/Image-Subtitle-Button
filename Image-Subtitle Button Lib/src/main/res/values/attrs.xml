@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ButtonStyle">
+        <attr name="button_style" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="ImageSubtitleButton">
+        <attr name="btn_image" format="reference" />
+        <attr name="btn_imageTint" format="color" />
+        <attr name="btn_imageVisible" format="boolean" />
+        <attr name="btn_imageSize" format="dimension" />
+        <attr name="btn_title" format="string" />
+        <attr name="btn_titleColor" format="color" />
+        <attr name="btn_titleVisible" format="boolean" />
+        <attr name="btn_subtitle" format="string" />
+        <attr name="btn_subtitleColor" format="color" />
+        <attr name="btn_subtitleVisible" format="boolean" />
+        <attr name="btn_rippleColor" format="color|reference" />
+        <attr name="btn_backgroundColor" format="color|reference" />
+        <attr name="btn_cornerRadius" format="dimension" />
+        <attr name="btn_titleSize" format="dimension" />
+        <attr name="btn_subtitleSize" format="dimension" />
+        <attr name="btn_shape">
+            <enum name="rectangle" value="0" />
+            <enum name="square" value="1" />
+            <enum name="circle" value="2" />
+            <enum name="oval" value="3" />
+        </attr>
+        <!-- Border -->
+        <attr name="btn_borderColor" format="color" />
+        <attr name="btn_borderWidth" format="dimension" />
+    </declare-styleable>
+</resources>

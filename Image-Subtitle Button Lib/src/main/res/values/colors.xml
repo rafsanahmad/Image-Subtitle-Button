@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="view_title">#FFFFFF</color>
+    <color name="view_subtitle">#FFFFFF</color>
+    <color name="ripple_color">#4527A0</color>
+    <color name="border_color">#000000</color>
+    <color name="background_color">#ffffff</color>
+</resources>
