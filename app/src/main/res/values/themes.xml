@@ -12,5 +12,17 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+        <item name="button_style">@style/ImageSubtitleButtonStyle</item>
+    </style>
+
+    <style name="ImageSubtitleButtonStyle">
+        <item name="btn_titleColor">@color/white</item>
+        <item name="btn_subtitleColor">@color/white</item>
+        <item name="btn_imageTint">@color/white</item>
+        <item name="btn_backgroundColor">@android:color/holo_green_light</item>
+        <item name="btn_rippleColor">@color/purple_700</item>
+        <item name="btn_borderColor">@android:color/holo_green_dark</item>
+        <item name="btn_borderWidth">2dp</item>
+        <item name="btn_cornerRadius">10dp</item>
     </style>
 </resources>

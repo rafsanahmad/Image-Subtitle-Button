@@ -1,18 +1,163 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:gravity="center"
+        android:orientation="vertical">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/button_with_title"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <com.rafsan.image_subtitlebuttonlib.ImageSubtitleButton
+            android:id="@+id/titleBtn"
+            android:layout_width="200dp"
+            android:layout_height="45dp"
+            app:btn_backgroundColor="@color/light_blue"
+            app:btn_title="This is the title" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/button_with_subtitle"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <com.rafsan.image_subtitlebuttonlib.ImageSubtitleButton
+            android:id="@+id/subtitleBtn"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            app:btn_backgroundColor="@color/light_blue"
+            app:btn_subtitle="Button subtitle"
+            app:btn_subtitleSize="6sp"
+            app:btn_title="Title"
+            app:btn_titleSize="10sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/button_with_image"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <com.rafsan.image_subtitlebuttonlib.ImageSubtitleButton
+            android:id="@+id/imageBtn"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            app:btn_backgroundColor="@color/light_blue"
+            app:btn_image="@drawable/logout_icon"
+            app:btn_imageSize="40dp"
+            app:btn_imageTint="@color/white"
+            app:btn_imageVisible="true"
+            app:btn_subtitle="Button subtitle"
+            app:btn_title="Title" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/button_with_border"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <com.rafsan.image_subtitlebuttonlib.ImageSubtitleButton
+            android:id="@+id/borderBtn"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            app:btn_backgroundColor="@color/light_blue"
+            app:btn_borderColor="@color/dark_blue"
+            app:btn_borderWidth="3dp"
+            app:btn_cornerRadius="10dp"
+            app:btn_image="@drawable/info_icon"
+            app:btn_imageSize="40dp"
+            app:btn_imageTint="@color/white"
+            app:btn_imageVisible="true"
+            app:btn_subtitle="Button subtitle"
+            app:btn_title="Title" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/button_with_ripple_amp_background"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <com.rafsan.image_subtitlebuttonlib.ImageSubtitleButton
+            android:id="@+id/colorBtn"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:btn_backgroundColor="@android:color/holo_blue_light"
+            app:btn_borderColor="@color/light_blue"
+            app:btn_borderWidth="3dp"
+            app:btn_cornerRadius="10dp"
+            app:btn_image="@drawable/logout_icon"
+            app:btn_imageSize="40dp"
+            app:btn_imageTint="@color/white"
+            app:btn_imageVisible="true"
+            app:btn_rippleColor="@color/purple_200"
+            app:btn_subtitle="Button subtitle"
+            app:btn_title="Title" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/button_styled_from_theme"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <com.rafsan.image_subtitlebuttonlib.ImageSubtitleButton
+            android:id="@+id/themedBtn"
+            style="?attr/button_style"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:btn_image="@drawable/info_icon"
+            app:btn_imageSize="40dp"
+            app:btn_imageVisible="true"
+            app:btn_subtitle="Button subtitle"
+            app:btn_title="Title" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/button_custom_shape"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <com.rafsan.image_subtitlebuttonlib.ImageSubtitleButton
+            android:id="@+id/shapeBtn"
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:btn_backgroundColor="@color/light_blue"
+            app:btn_rippleColor="@color/dark_blue"
+            app:btn_shape="oval"
+            app:btn_subtitle="Button subtitle"
+            app:btn_title="Title" />
+
+    </LinearLayout>
+
+</ScrollView>
