@@ -17,6 +17,7 @@ import android.view.View
 import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
+import androidx.core.content.ContextCompat
 import com.rafsan.image_subtitlebuttonlib.model.Shape
 import com.rafsan.image_subtitlebuttonlib.util.dpToPx
 
@@ -105,13 +106,13 @@ class ImageSubtitleButton : LinearLayout {
             title = a.getString(R.styleable.ImageSubtitleButton_btn_title)
             titleColor = a.getColor(
                 R.styleable.ImageSubtitleButton_btn_titleColor,
-                resources.getColor(R.color.view_title)
+                ContextCompat.getColor(context, R.color.view_title)
             )
             titleVisible = a.getBoolean(R.styleable.ImageSubtitleButton_btn_titleVisible, true)
             subtitle = a.getString(R.styleable.ImageSubtitleButton_btn_subtitle)
             subtitleColor = a.getColor(
                 R.styleable.ImageSubtitleButton_btn_subtitleColor,
-                resources.getColor(R.color.view_subtitle)
+                ContextCompat.getColor(context, R.color.view_subtitle)
             )
             subtitleVisible =
                 a.getBoolean(R.styleable.ImageSubtitleButton_btn_subtitleVisible, true)

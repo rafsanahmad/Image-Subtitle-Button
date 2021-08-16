@@ -3,8 +3,8 @@
     <string name="button_with_title">Button with title</string>
     <string name="button_with_subtitle">Button with subtitle</string>
     <string name="button_with_image">Button with image</string>
-    <string name="button_with_border">Button with border</string>
     <string name="button_with_ripple_amp_background"><![CDATA[Button with ripple & background]]></string>
     <string name="button_styled_from_theme">Button styled from theme</string>
     <string name="button_custom_shape">Button custom shape</string>
+    <string name="button_with_border_amp_radius"><![CDATA[Button with border & radius]]></string>
 </resources>
