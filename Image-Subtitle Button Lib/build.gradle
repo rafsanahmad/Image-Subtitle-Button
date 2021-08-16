@@ -4,16 +4,6 @@ plugins {
     id 'maven-publish'
 }
 
-repositories {
-    mavenCentral()
-    google()
-    maven { url "https://jitpack.io" }
-}
-
-group = 'com.rafsan.image_subtitlebutton'
-version = '1.0.2'
-
-
 android {
     compileSdk rootProject.compileSdkVersion
 
@@ -59,8 +49,8 @@ afterEvaluate {
             release(MavenPublication) {
                 from components.release
                 groupId = 'com.rafsan'
-                artifactId = 'image_subtitlebutton'
-                version = '1.0.2'
+                artifactId = 'image_subtitlebuttonlib'
+                version = '1.0.3'
             }
         }
     }
