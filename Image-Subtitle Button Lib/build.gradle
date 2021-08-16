@@ -1,7 +1,18 @@
 plugins {
     id 'com.android.library'
     id 'kotlin-android'
+    id 'maven-publish'
 }
+
+repositories {
+    mavenCentral()
+    google()
+    maven { url "https://jitpack.io" }
+}
+
+group = 'com.rafsan.image_subtitlebutton'
+version = '1.0.2'
+
 
 android {
     compileSdk rootProject.compileSdkVersion
@@ -39,4 +50,18 @@ dependencies {
     testImplementation 'junit:junit:4.+'
     androidTestImplementation "androidx.test.ext:junit:$rootProject.jUnitVersion"
     androidTestImplementation "androidx.test.espresso:espresso-core:$rootProject.espressoVersion"
+}
+
+afterEvaluate {
+    publishing {
+        publications {
+            // Creates a Maven publication called "release".
+            release(MavenPublication) {
+                from components.release
+                groupId = 'com.rafsan'
+                artifactId = 'image_subtitlebutton'
+                version = '1.0.2'
+            }
+        }
+    }
 }

@@ -3,18 +3,18 @@ The app has a custom module called Image Subtitle Button Lib, which is used acro
 
 Image-Subtitle Button has the following properties:
 
-a) Button title - show/hide/change color/size\
-b) Button subtitle - show/hide/change color/size\
-c) Button image - show/hide/tint color/Image size\
-d) Button ripple - color\
-e) Button background color\
-f) Button shape (rectange, circle, square, oval)\
-g) Button border - width/color\
-h) Button corner - radius
+a) Button **title** - show/hide/change color/set size\
+b) Button **subtitle** - show/hide/change color/set size\
+c) Button **image** - show/hide/tint color/set Image size\
+d) Button **ripple** - color\
+e) Button **background** color\
+f) Button **shape** (rectange, circle, square, oval)\
+g) Button **border** - width/color\
+h) Button **corner** - radius
 
 These attributes can be configured from layouts.xml
 
-For example:
+## **XML**:
 ```
 <com.rafsan.image_subtitlebuttonlib.ImageSubtitleButton
 android:id="@+id/logoutBtn"
@@ -37,9 +37,9 @@ app:btn_title="@string/logout"
 app:btn_titleColor="@color/white"/>
 ```
 
-The attributes can also be configured from themes.xml
+The attributes can also be configured from `themes.xml`
 
-For example:
+For example: in your layout
 ```
 <com.rafsan.image_subtitlebuttonlib.ImageSubtitleButton
 android:id="@+id/loginBtn"
@@ -52,7 +52,7 @@ app:btn_subtitle="@string/username_password"
 app:btn_title="@string/logintext"/>
 ```
 
-In themes.xml:
+In `themes.xml`:
 ```
 <style name="ImageSubtitleButtonStyle">
   <item name="btn_titleColor">@color/white</item>
@@ -71,6 +71,12 @@ Plug in the custom style to main app theme:
 <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
 	<item name="button_style">@style/ImageSubtitleButtonStyle</item>
 </style>
+```
+
+## **Programmatically**
+You can also change the button attribute via code:
+```
+titleBtn.setTitleColor(ContextCompat.getColor(this, android.R.color.holo_blue_light))
 ```
 
 # Demo:
@@ -100,6 +106,6 @@ Step 2. Add the dependency
 
 ```
 dependencies {
-	        implementation 'com.github.rafsanahmad:Image-Subtitle-Button:Tag'
+	        implementation 'com.github.rafsanahmad:Image-Subtitle-Button:1.0.2'
 	}
 ```
