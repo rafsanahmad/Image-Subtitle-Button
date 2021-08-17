@@ -36,7 +36,7 @@ android {
 }
 
 dependencies {
-    implementation project(':Image-Subtitle Button Lib')
+    implementation project(':image_subtitlebuttonlib')
     implementation "androidx.core:core-ktx:$rootProject.ktxVersion"
     implementation "androidx.appcompat:appcompat:$rootProject.appCompatVersion"
     implementation "com.google.android.material:material:$rootProject.materialVersion"
