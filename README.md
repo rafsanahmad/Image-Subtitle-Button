@@ -106,6 +106,6 @@ Step 2. Add the dependency
 
 ```
 dependencies {
-	        implementation 'com.github.rafsanahmad:Image-Subtitle-Button:1.2.0'
+	        implementation 'com.github.rafsanahmad:Image-Subtitle-Button:1.2.1'
 	}
 ```

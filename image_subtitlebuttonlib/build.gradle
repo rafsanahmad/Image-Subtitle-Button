@@ -50,20 +50,7 @@ afterEvaluate {
                 from components.release
                 groupId = 'com.rafsan'
                 artifactId = 'image_subtitlebuttonlib'
-                version = '1.2.0'
-            }
-            mavenJava(MavenPublication) {
-                pom {
-                    name = 'Image-Subtitle-Button'
-                    description = 'A library for adding custom button with title, sub-title, image with customization options.'
-                    url = 'https://github.com/rafsanahmad/Image-Subtitle-Button'
-                    licenses {
-                        license {
-                            name = 'The Apache License, Version 2.0'
-                            url = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
-                        }
-                    }
-                }
+                version = '1.2.1'
             }
         }
     }
